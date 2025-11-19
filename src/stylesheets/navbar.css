@@ -1,0 +1,63 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 104px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 45px;
+  background:white;
+  z-index: 1000;
+}
+
+.navbar-title{
+  font-size: 20px;
+}
+
+.navbar-pages a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-pages a:hover {
+  text-decoration: underline; 
+}
+
+
+.navbar-signout-button{
+  height: 41px;
+  width: 77px;
+  font-size: 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #D2F69E;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.navbar-signout-button:hover {
+  background-color: #c3ec8f;   
+}
+
+.navbar-pages{
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-size: 14px;
+}
+
+.navbar-pages li{
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .navbar-title {
+    display: none;
+  }
+}
+
